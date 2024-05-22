@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Customised css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg shadow sticky-top bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.jpeg" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <button class="btn px-5 py-3" type="submit">Order Online</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="20000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/fresh-vegetable-salad-with-grilled-chicken-breast.png" class="d-block w-100"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-6">Welcome To GoldenPheonix-Restaurant</h5>
+                        <p class="display-3 fw-bold">Fresh and Tasty Food</p>
+                        <button class="btn px-5 py-3" type="submit">Book Table</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/healthy-salad-with-salmon-tomatoes-mushrooms-lettuce-lentil-dark-2.png"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-6">Welcome To GoldenPheonix-Restaurant</h5>
+                        <p class="display-3 fw-bold">Char-grilled and Flavor-Filled</p>
+                        <button class="btn px-5 py-3" type="submit">Book Table</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="mt-5 py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img src="images/louis-hansel-v3OlBE6-fhU-unsplash.jpg" class="img-fluid">
+                </div>
+
+                <div class="col-md-5 text-start">
+                    <h2 class="pt-5 fw-bold fs- mt-5">About Us</h2>
+                    <div class="py-3">
+                        <div class="line"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, esse. Eligendi ipsum itaque
+                        voluptates,
+                        facilis doloribus omnis iste ratione voluptatibus. Iure facere labore expedita sint consectetur
+                        saepe sequi pariatur mollitia?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, esse. Eligendi ipsum itaque
+                        voluptates,
+                        facilis doloribus omnis iste ratione voluptatibus. Iure facere labore expedita sint consectetur
+                        saepe sequi pariatur mollitia?</p>
+                    <button class="btn px-5 py-3" type="submit">Explore Menu</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="section" class="sec pt-5">
+        <div class="container">
+            <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active shadow" id="pills-alldishes-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-alldishes" type="button" role="tab" aria-controls="pills-alldishes"
+                        aria-selected="true">All Dishes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link shadow" id="pills-breakfast-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast"
+                        aria-selected="false">Breakfast</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link shadow" id="pills-lunch-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch"
+                        aria-selected="false">Lunch</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link shadow" id="pills-dinner-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner"
+                        aria-selected="false">Dinner</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-alldishes" role="tabpanel"
+                    aria-labelledby="pills-alldishes-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-3 pb-5">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-md-3 pb-5">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-md-3 pb-5">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-md-3 pb-5">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card text-center">
+                                <img src="images/Bruschetta.jpg" alt="">
+                                <div class="card-body">
+                                    <h4>Bruschetta</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis amet hic quam
+                                        fugiat facere, reprehenderit iure officia inventore! Inventore dolorem dicta
+                                        explicabo fuga nobis magni eligendi numquam asperiores doloremque consequuntur!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row text-center py-5">
+                <h2 class="display-5 fw-bold">Our Team Members</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia excepturi consequatur
+                    eligendi corrupti non quasi suscipit maiores cumque neque placeat, aut corporis molestiae delectus
+                    sit quo odit illum nesciunt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
